@@ -1,0 +1,32 @@
+.notFound {
+  position: relative;
+  max-width: 80%;
+  margin: 10em auto;
+}
+
+.notFound__wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.notFound__img {
+  width: clamp(300px, 40%, 500px);
+  height: clamp(300px, 40%, 500px);
+  flex-basis: 100%;
+}
+
+.notFound__info {
+  font-size: 48px;
+  text-align: center;
+}
+
+.notFound__btn-wrap {
+  max-width: 100%;
+}
+
+.btn--notFound__btn {
+  max-width: 100%;
+}

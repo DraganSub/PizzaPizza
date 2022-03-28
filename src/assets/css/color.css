@@ -1,0 +1,29 @@
+:root {
+  --toppings-wrap-background-color: #e5c3f5;
+  --toppings-normal-bg-color: #ffffff;
+
+  --price-font-color: #b95de4;
+  --font-color: #383838;
+  --font-placeholder-color: #8c8c8c;
+  --done-font-color: #39e16d;
+  --inProgres-font-color: #d4a651;
+
+  --confirm-btn-background-color: #b95de4;
+  --btn-font-color: #ffffff;
+  --disable-btn-background-color: #b490df;
+
+  --piza-size-active-bgColor: #ffffff;
+
+  --finish-order-bg-color: rgba(255, 255, 255, 0.9);
+  --input-bg-color: #ececf3;
+
+  --delivery-placeholder-color: #979797;
+  --modal-background: #ffffff;
+  --form-modal-bgColor: #ffffff;
+  --nav-border-color: #dbdbdb;
+
+  --loader-color: #b95de4;
+
+  --error-bgColor: rgba(236, 84, 114, 0.1);
+  --error-left-bgColor: rgba(236, 84, 114, 0.6);
+}

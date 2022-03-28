@@ -1,0 +1,110 @@
+.nav {
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+}
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  max-width: 80%;
+  align-items: center;
+  margin: auto;
+  height: 100px;
+  justify-content: center;
+}
+
+.nav__list-item {
+  text-align: center;
+  flex-basis: 100%;
+}
+.nav__link {
+  color: var(--font-color);
+  background-color: transparent;
+}
+
+.nav__toggle {
+  display: none;
+}
+
+.nav__btn {
+  padding: 5px 24px;
+  border: 1px solid var(--nav-border-color);
+  box-sizing: border-box;
+  border-radius: 36px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px 2px;
+  color: var(--font-color);
+  background-color: transparent;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.nav__btn:hover {
+  outline: 1px solid var(--price-font-color);
+}
+
+.nav__list-item:hover {
+  outline: none;
+}
+
+@media (max-width: 700px) {
+  .nav__list {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 10em 0em;
+    background: hsl(0 0% 100% / 1);
+    max-width: 100%;
+    width: 100%;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
+  .nav__list-item {
+    padding: 10px;
+  }
+
+  .nav__toggle {
+    display: block;
+    position: absolute;
+    border: none;
+    z-index: 9999;
+    height: 25px;
+    width: 25px;
+    background: transparent;
+    left: 5%;
+    top: 20px;
+  }
+
+  .nav__toggle--is-open {
+    background: url(../../assets/images/hamburger-menu.png);
+    background-size: contain;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .nav__toggle--is-closed {
+    background-image: url(../../assets/images/close-btn.png);
+    background-size: contain;
+    cursor: pointer;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .nav__list--is-open,
+  .nav__list-item,
+  .nav__img {
+    background-color: transparent;
+    padding: 15px;
+  }
+  .nav__list--is-open {
+    transform: translateX(100%);
+  }
+  .nav__list--is-closed {
+    transform: translateX(0%);
+  }
+}

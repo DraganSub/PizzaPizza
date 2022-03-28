@@ -1,0 +1,35 @@
+.btn {
+  border: none;
+  color: var(--btn-font-color);
+  border-radius: 48px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: fit-content;
+  cursor: pointer;
+  transition: ease-in 0.5s;
+}
+
+.btn--is-active {
+  background-color: var(--confirm-btn-background-color);
+}
+
+.btn--is-active:hover {
+  background: var(--disable-btn-background-color);
+}
+
+.btn--sm {
+  padding: 21px 24px;
+}
+
+.btn--lg {
+  padding: 21px 48px;
+}
+
+.btn--is-disabled {
+  background-color: var(--disable-btn-background-color);
+}
+
+.btn--is-disabled:hover {
+  background-color: var(--confirm-btn-background-color);
+}

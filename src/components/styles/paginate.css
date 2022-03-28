@@ -1,0 +1,22 @@
+.pagination__list {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  padding: 50px 0px;
+}
+
+.paginate__btn {
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 15px;
+  border: 1px solid var(--confirm-btn-background-color);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.paginate__btn:hover {
+  background-color: var(--confirm-btn-background-color);
+  color: var(--btn-font-color);
+}
